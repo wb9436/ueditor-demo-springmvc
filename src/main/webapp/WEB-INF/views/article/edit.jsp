@@ -11,18 +11,18 @@
 <script type="text/javascript" src="<c:url value='<%=uEditorCore%>'/>"></script>
 <script type="text/javascript" src="<c:url value='<%=uEditorLang%>'/>"></script>
 
-<form action="<c:url value='/article/update' />" method="post">
+<form action="<c:url value='/article/update' />" method="post" style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
 	<input type="hidden" name="id" value="${articleDto.id}" >
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>公告标题：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="text" class="input-text" value="${articleDto.title}" id="title" name="title">
+			<input type="text" class="input-text" style="width:400px;" value="${articleDto.title}" id="title" name="title">
 		</div>
 	</div>
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>公告内容：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<script id="desc" name="desc" type="text/plain" style="width:375px;height:500px;">${articleDto.desc}</script>
+			<script id="desc" name="desc" type="text/plain" style="width:400px;height:650px;">${articleDto.desc}</script>
 		</div>
 	</div>
 	<div class="row cl">
