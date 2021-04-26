@@ -141,7 +141,7 @@
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<!-- ueditor需要2.4版本 -->
-			<version>2.4</version>
+			<version>2.7</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-fileupload</groupId>
